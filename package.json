@@ -1,0 +1,37 @@
+{
+	"name": "jzt-create-page-cli",
+	"version": "1.0.3",
+	"description": "create template page",
+	"main": "src/index.js",
+	"bin": {
+		"jztc": "dist/src/index.js"
+	},
+	"scripts": {
+		"build": "sh build/index.sh",
+		"test": "npm run setup && jztc create newPage",
+		"setup": "npm run build && npm link"
+	},
+	"dependencies": {
+		"@types/commander": "^2.12.2",
+		"@types/ejs": "^3.0.6",
+		"@types/handlebars": "^4.1.0",
+		"@types/inquirer": "^7.3.1",
+		"@types/metalsmith": "^2.3.0",
+		"@types/node": "^14.14.35",
+		"commander": "^7.2.0",
+		"ejs": "^3.1.6",
+		"handlebars": "^4.7.3",
+		"inquirer": "^8.0.0",
+		"metalsmith": "^2.3.0",
+		"nodemon": "^2.0.7",
+		"ora": "^5.4.0",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.2.3"
+	},
+	"keywords": [
+		"cli",
+		"page generator"
+	],
+	"author": "chong",
+	"license": "ISC"
+}
